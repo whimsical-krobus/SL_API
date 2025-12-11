@@ -20,9 +20,11 @@ export function initGeolocation() {
     navigator.geolocation.getCurrentPosition(
       // Om positionen hämtas framgångsrikt
       (position) => {
-        latEl!.textContent = "Latitud: " + position.coords.latitude;
-        lonEl!.textContent = "Longitud: " + position.coords.longitude;
+        latEl!.textContent = "Latitud: " + position.coords.latitude.toFixed(5);
+        lonEl!.textContent = "Longitud: " + position.coords.longitude.toFixed(5);
+
       },
+
       // Om något fel uppstår
       (error) => {
         latEl!.textContent = "Kunde inte hämta position.";
