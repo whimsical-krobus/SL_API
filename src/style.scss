@@ -92,5 +92,12 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+     padding: 10px 20px;
+     margin-top: 10px;
+     cursor: pointer;
   }
+}
+p {
+  font-size: 18px;
+  margin-top: 10px;
 }
